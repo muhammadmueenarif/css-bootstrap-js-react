@@ -37,4 +37,15 @@ you should use flex-column instead.
 The pull-right class is not a valid class in Bootstrap 5. It was used in Bootstrap 3, but in Bootstrap 5, you should use float-end instead.
 
 while using ul and li for nav. give nav-item class to li, nav-link class to a in li. then active class
-will work.  
+will work. 
+
+
+Lec 04. Bootstrap Alerts.
+we can use it for feedback and showing something to users. we can show close icon to close alert. 
+alert-success, info, warning, danger are just to give different colors to our alert. 
+
+alert-dismissible class will show close icon. it is not in bootstrap 5 but it was in 3. we use close class 
+to show close icon.
+
+data-dismiss="alert", it will not remove the alert but we will use data-bs-dismiss="alert".
+

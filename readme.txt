@@ -49,3 +49,10 @@ to show close icon.
 
 data-dismiss="alert", it will not remove the alert but we will use data-bs-dismiss="alert".
 
+
+Lec 05. Bootstrap Breadcrumbs
+Breadcrumbs is like we go to home/sport/cricket page of a website. it provides us facility to go back
+in the same order.
+we can use lists for this purpose. 
+to show list items as breadcrumbs and at some space, we will use breadcrumb-item class in each list item.
+ 

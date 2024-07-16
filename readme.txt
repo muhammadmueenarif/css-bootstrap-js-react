@@ -23,3 +23,18 @@ form-inline class to form. it will align in single line. form-inline class is no
 we can use the d-flex and flex-wrap classes to achieve the same effect. 
 
 
+Lec 03. Badges 
+Badgers give additional information along with the label.
+nav nav pills in nav for 3 lines. 
+active means selected.       
+<li><a href="#">Messages <span class="badge">3</span></a></li> this 3 will be showin in front of Messages
+like a badge. badge-pill class will make it circular.
+
+nav-stacked class in ul will make all the list items vertical. 
+The nav-stacked class is not a valid class in Bootstrap 5. It was used in Bootstrap 3, but in Bootstrap 5, 
+you should use flex-column instead.
+
+The pull-right class is not a valid class in Bootstrap 5. It was used in Bootstrap 3, but in Bootstrap 5, you should use float-end instead.
+
+while using ul and li for nav. give nav-item class to li, nav-link class to a in li. then active class
+will work.  

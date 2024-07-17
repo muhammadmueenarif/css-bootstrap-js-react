@@ -85,3 +85,8 @@ btn-xs class will make buttons extra small. btn-block class will make buttons fu
 
 
 Lec 08. List Groups in Bootstrap
+
+Lec 09. Bootstrap Labels
+when we want to show some information on webpage, we can use label. 
+we can make any span as label by using label class of bootstrap. by using label class in span, it  will 
+take only specific width according to text. 

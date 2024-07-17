@@ -55,4 +55,16 @@ Breadcrumbs is like we go to home/sport/cricket page of a website. it provides u
 in the same order.
 we can use lists for this purpose. 
 to show list items as breadcrumbs and at some space, we will use breadcrumb-item class in each list item.
- 
+
+Lec 06. Bootstrap Button Groups
+if we put buttons group, it gives a feeling of menu. we can create a menu in web page using button groups.
+we can set different actions for different buttons. 
+
+btn-group class will group all buttons inside it. 
+btn-group-lg class will give large size to buttons. 
+btn-group-vertical class will make buttons vertical.
+btn-group-sm class will make buttons small.
+btn-group-xs class will make buttons extra small.
+btn-group-vertical will arrange buttons in vertical order. 
+caret class will show dropdown symbol button.
+btn-group-toggle class will make buttons toggle buttons.

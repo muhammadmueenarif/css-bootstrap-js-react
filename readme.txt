@@ -68,3 +68,17 @@ btn-group-xs class will make buttons extra small.
 btn-group-vertical will arrange buttons in vertical order. 
 caret class will show dropdown symbol button.
 btn-group-toggle class will make buttons toggle buttons.
+
+
+Lec 07. Bootstrap Buttons 
+here are button classess that we will discuss. 
+btn, btn-primary, btn-success, btn-info, btn-warning, btn-danger, btn-link.
+btn is basic class for buttons. by default these all classes will give some color to buttons like blue 
+or dark blue etc., 
+
+btn-primary will give blue color, btn-success will give green, btn-info will give light blue color to buttons.
+btn-warning will give yellow color, btn-danger will give red color. 
+btn-link will make buttons look like links.
+
+btn-lg class will make buttons large.btn-sm class will make buttons small.
+btn-xs class will make buttons extra small. btn-block class will make buttons full width.

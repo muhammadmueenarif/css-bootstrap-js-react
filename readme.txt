@@ -90,3 +90,15 @@ Lec 09. Bootstrap Labels
 when we want to show some information on webpage, we can use label. 
 we can make any span as label by using label class of bootstrap. by using label class in span, it  will 
 take only specific width according to text. 
+
+
+Lec 10. Bootstrap Grid System.
+Bootstrap include a responsive, mobile first fluid system.
+it is based on 12 columns grid system. these 12 columns can be used accordingly on the base of different
+screen sizes. 
+check image for more details. 
+
+col-lg-3 means 3 columns occupy for large devices. 
+col-md-3 means 3 columns occupy for medium devices.
+col-sm-3 means 3 columns occupy for small devices.
+col-xs-3 means 3 columns occupy for extra small devices.

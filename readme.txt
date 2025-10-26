@@ -102,3 +102,151 @@ col-lg-3 means 3 columns occupy for large devices.
 col-md-3 means 3 columns occupy for medium devices.
 col-sm-3 means 3 columns occupy for small devices.
 col-xs-3 means 3 columns occupy for extra small devices.
+
+
+Section 04. React crash course.
+Now we will discuss about react. In react, we have jsx syntax which is not html but combination 
+of html and js. we can write js code inside html tags. It makes easy to build components and the transpiler 
+called babel will convert jsx into html in background. we use classname instead of class in react. because 
+class is a keyword in js. we always export our function at the end of file and use it in other files. 
+component are rendered using react dom library. 
+
+We will use npx create-react-app app_name to create the react app. then move to the containing folder like 
+cd app_name. then npm start to start the app. we will use npm install bootstrap to install bootstrap in our react app. 
+then we will import bootstrap in our app.js file. then we will use bootstrap classes in our components.
+
+now i will make commit after the react learning is complete as it will take too much time to and file 
+will be too large. so i will make commit after the react learning is complete. i will delete node modules folder 
+and package-lock.json file. then i will make commit. if anyone wants to use this then he/she can just download 
+the zip file and install node modules(using npm install) and then npm start to run the app.
+
+lecture 01 complete here. 
+
+
+Lecture 02. React Multiple components. 
+app.js is called root component of application means this is the first component that renders when 
+app starts. in react, the component rendered in such a way that they make component tree. 
+A component is just a function that is exported at the end of file and called where need. install simple 
+react snippets extension in vs code. 
+
+
+Lecture 03. 
+We can also return the variable in jsx of react. we simply need to use {} to output the variable in react.
+e.g., const title = "React app"; <h1>{title}</h1>. 
+Number, string and arrays can be output. we can't directly output boolean and object.
+we can also use if else, loop, and array and its function inside jsx. 
+const visit = 'https://www.Google.com';
+<a href='visit'>Google</a>
+
+
+Lecture 04. React usestate() hook. 
+const Home = () => {
+    
+    let name = 'Kashan';
+    const handleClick = ()=>{
+        name = 'Moin';
+        console.log(name);
+    }
+
+    return (
+        <div className= "Home">
+            <h2>Home Page</h2>
+            <p>{name}</p>
+            <button onClick={handleClick}>Click me</button>
+        </div>
+      );
+}
+ 
+export default Home;
+
+in the above code, the name is not updated in the p tag. this is because the nameis a let variable and let variables are not reactive. we can't use let, const, var
+in react. we can use useState() hook to make the variable reactive.
+first import {usestate} from 'react;
+then use useState() hook. useState() hook returns an array of two values. the first value is
+the current state and the second value is a function to update the state.
+
+const [name, setName] = useState('Kashan');
+const handleClick = ()=>{
+    setName('Moin');
+    console.log(name);
+    }
+
+in the above code, the name is updated in the p tag.
+
+
+Lecture 05. React usestate counter app. 
+Try to build yourself.
+
+
+Lecture 06. React props. 
+Props is short for properties. Props are immutable. props used to pass data from one component to another. 
+props are read only. means the data passed to the other component cannot be changed by it.
+
+we can pass props in two ways.
+1. passing props as a function argument
+2. passing props as a JSX attribute.
+
+two examples to render data with props and without props. 
+1. without props
+const Home = () => {
+    return (
+        <div className= "Home">
+        <h2>Home Page</h2>
+        <p>Kashan</p>
+        </div>
+        );
+        }
+    
+2. with props
+    const Home = (props) => {
+        return (
+            <div className= "Home">
+            <h2>Home Page</h2>
+            <p>{props.name}</p>
+            </div>
+            );
+            }
+            const App = () => {
+                return (
+                    <div>
+                    <Home name="Kashan"/>
+                    </div>
+                    );
+                    }
+in the above code, the name is passed as a prop to the Home component. we can also pass multiple props.
+            const Home = (props) => {
+                return (
+                    <div className= "Home">
+                        <h2>Home Page</h2>
+                        <p>{props.name}</p>
+                        <p>{props.age}</p>
+                    </div>
+                    );
+                }
+
+Just check the code of props.js file. 
+
+
+Lecture 07. React Adding Styles
+first we will delete app.css file and remove it from app.js. we will use index.css file for stylng and
+import it in app.js. we can also use different css files for component. 
+    <nav className="navbar">
+            <h1>The coder web App</h1>
+            <div className="links">
+                <a ahref= "/">Home</a>
+                <a ahref= "/create" /*style={{
+                    //in css we use style = "", but here if we want to give we will give this as an object
+                    //and we will not use as border-radius but we use camel case as borderRadius.
+                    color: 'white',
+                    backgroundColor: '#f1356d',
+                    borderRadius: '8px',
+                }}*/>New App</a>
+            </div>
+
+        </nav>
+
+
+Lecture 08. Build Project Using props
+we will use two functional components that will display information about the books. four things for 
+books. one is book title, book author, book description, book date. Try it yourself just like the props section.
+
